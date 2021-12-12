@@ -1,0 +1,76 @@
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 1400px,
+  xl: 1400px,
+  xxl: 1400px,
+);
+
+$primary: rgb(73, 95, 87);
+$secondary: rgb(207, 198, 181);
+$danger: rgb(212, 150, 134);
+$info: rgb(55, 73, 63);
+
+// $nav-tabs-link-active-bg: $secondary;
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// 4. Include any optional Bootstrap components as you like
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+
+// @import "../node_modules/bootstrap/scss/buttons";
+// @import "../node_modules/bootstrap/scss/card";
+// @import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/nav";
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/utilities/api";
+
+// 5. Add additional custom code here
+.custom-element {
+  color: tint-color($primary, 10%);
+}
+
+.custom-element-2 {
+  color: shade-color($primary, 30%);
+}
+
+.card-roll {
+  div.img-container {
+    height: 220px;
+    overflow: hidden;
+    background-color: gray;
+    img {
+      filter: blur(2px);
+      opacity: 0.3;
+    }
+  }
+  &:hover {
+    background-color: white;
+    img {
+      opacity: 1;
+      transition: all 5s ease-out;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.nav-item.active {
+  padding-bottom: 1.5rem;
+}
+
+#project {
+  height: 80vh;
+  overflow: auto;
+}

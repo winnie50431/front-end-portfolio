@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Winnie Lin</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link href="css/style.css" rel="stylesheet" />
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body class="bg-primary text-light">
+    <header class="container">
+      <div class="row">
+        <div class="col-12 text-center pb-3">
+          <h1 class="fs-2 font-monospace">
+            Winnie Lin's
+            <br />
+            <span class="bg-light text-primary fs-5 fw-bold">
+              Frontend Portfolio
+            </span>
+          </h1>
+        </div>
+      </div>
+    </header>
+
+    <main class="pb-3">
+      <!-- 頁籤 -->
+      <nav class="container">
+        <ul
+          class="nav nav-tabs navbar-dark bg-primary align-items-end"
+          id="myTab"
+          role="tablist"
+        >
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active bg-light"
+              id="project-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#project"
+              type="button"
+              role="tab"
+              aria-controls="project"
+              aria-selected="true"
+            >
+              Works
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link bg-danger"
+              id="profile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#profile"
+              type="button"
+              role="tab"
+              aria-controls="profile"
+              aria-selected="false"
+            >
+              About
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link bg-info text-light"
+              id="contact-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#contact"
+              type="button"
+              role="tab"
+              aria-controls="contact"
+              aria-selected="false"
+            >
+              Contact
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- 面板內容 -->
+      <div class="tab-content" id="myTabContent">
+        <!-- 1st tab Works -->
+        <div
+          class="container tab-pane fade show active bg-light"
+          id="project"
+          role="tabpanel"
+          aria-labelledby="project-tab"
+        >
+          <!-- Works List -->
+          <div class="row">
+            <!-- 1.1 CourseSpace -->
+            <div class="col-12 col-sm-6 col-lg-4 p-3">
+              <div class="card bg-dark card-roll">
+                <div class="img-container">
+                  <img
+                    src="./img/img_project (1).png"
+                    class="card-img"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-img-overlay">
+                  <h5 class="card-title">React Project - CourseSpace</h5>
+                  <p class="card-text">
+                    課程註冊網頁練習
+                    <br />
+                    應用: REACT/ Bootstrap5/ Axios/ JWT
+                  </p>
+                  <div class="btn-group" role="group" aria-label="demo or code">
+                    <a class="btn btn-light">demo</a>
+                    <a class="btn btn-secondary">code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 1.2 BikeFun -->
+            <div class="col-12 col-sm-6 col-lg-4 p-3">
+              <div class="card bg-dark card-roll">
+                <div class="img-container">
+                  <img
+                    src="./img/img_project (1).png"
+                    class="card-img"
+                    alt="..."
+                  />
+                </div>
+                <div class="card-img-overlay">
+                  <h5 class="card-title">BikeFun</h5>
+                  <p class="card-text">
+                    F2E 3rd作品，練習手刻RWD，以及fetch API介接。
+                    <br />
+                    應用: JavaScript/ SCSS/ Fetch API/ leaflet
+                  </p>
+                  <div class="btn-group" role="group" aria-label="demo or code">
+                    <a class="btn btn-light">demo</a>
+                    <a class="btn btn-secondary">code</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- 2nd tab Profile -->
+        <div
+          class="tab-pane fade"
+          id="profile"
+          role="tabpanel"
+          aria-labelledby="profile-tab"
+        >
+          <section
+            class="
+              container
+              d-flex
+              align-items-center
+              justify-content-center
+              p-3
+            "
+          >
+            <dl class="row w-75">
+              <dt class="col-4">Name</dt>
+              <dd class="col-8">Winnie Lin</dd>
+
+              <dt class="col-4">Skills</dt>
+              <dd class="col-8">
+                <ul>
+                  <li>
+                    Experience with HTML5, CSS3 and JavaScript and understanding
+                    of ECMAScript 2015(ES6).
+                  </li>
+                </ul>
+              </dd>
+
+              <dt class="col-4">Say</dt>
+              <dd class="col-8">"I just put all my eggs in F2E."</dd>
+            </dl>
+          </section>
+        </div>
+        <!-- 3rd tab Contact -->
+        <div
+          class="tab-pane fade"
+          id="contact"
+          role="tabpanel"
+          aria-labelledby="contact-tab"
+        >
+          ...
+        </div>
+      </div>
+    </main>
+
+    <footer class="container pb-3">
+      <div class="row">
+        <div class="col-12 text-center">
+          <small>©Copyright 2021 Winnie Lin</small>
+        </div>
+      </div>
+    </footer>
+
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script> -->
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>

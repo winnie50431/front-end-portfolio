@@ -1,3 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "../node_modules/bootstrap/scss/functions";
 
@@ -14,7 +23,7 @@ $grid-breakpoints: (
 $primary: rgb(73, 95, 87);
 $secondary: rgb(207, 198, 181);
 $danger: rgb(212, 150, 134);
-$info: rgb(55, 73, 63);
+$info: rgb(168, 199, 182);
 
 // $nav-tabs-link-active-bg: $secondary;
 
@@ -30,27 +39,38 @@ $info: rgb(55, 73, 63);
 @import "../node_modules/bootstrap/scss/containers";
 @import "../node_modules/bootstrap/scss/grid";
 
-// @import "../node_modules/bootstrap/scss/buttons";
-// @import "../node_modules/bootstrap/scss/card";
-// @import "../node_modules/bootstrap/scss/navbar";
 @import "../node_modules/bootstrap/scss/nav";
 @import "../node_modules/bootstrap/scss/utilities";
 @import "../node_modules/bootstrap/scss/utilities/api";
 
 // 5. Add additional custom code here
-.custom-element {
-  color: tint-color($primary, 10%);
+
+dl.about {
+  dt {
+    color: shade-color($primary, 30%);
+  }
 }
 
-.custom-element-2 {
-  color: shade-color($primary, 30%);
+ul.skills {
+  list-style: none;
+  li {
+    // border: 2px solid black;
+    padding: 0 0.5rem;
+    background-color: shade-color($secondary, 10%);
+  }
+}
+
+img.photo {
+  background-color: white;
+  padding: 1vw;
+  border: 1px dashed $secondary;
 }
 
 .card-roll {
   div.img-container {
     height: 220px;
     overflow: hidden;
-    background-color: gray;
+    background-color: #505050;
     img {
       filter: blur(2px);
       opacity: 0.3;
@@ -59,7 +79,6 @@ $info: rgb(55, 73, 63);
   &:hover {
     background-color: white;
     img {
-      opacity: 1;
       transition: all 5s ease-out;
       transform: translateY(-50%);
     }
@@ -70,7 +89,7 @@ $info: rgb(55, 73, 63);
   padding-bottom: 1.5rem;
 }
 
-#project {
+#project #profile {
   height: 80vh;
   overflow: auto;
 }

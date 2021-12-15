@@ -1,3 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -24,7 +33,7 @@
   --bs-primary: #495f57;
   --bs-secondary: #cfc6b5;
   --bs-success: #198754;
-  --bs-info: #37493f;
+  --bs-info: #a8c7b6;
   --bs-warning: #ffc107;
   --bs-danger: #d49686;
   --bs-light: #f8f9fa;
@@ -32,7 +41,7 @@
   --bs-primary-rgb: 73, 95, 87;
   --bs-secondary-rgb: 207, 198, 181;
   --bs-success-rgb: 25, 135, 84;
-  --bs-info-rgb: 55, 73, 63;
+  --bs-info-rgb: 168, 199, 182;
   --bs-warning-rgb: 255, 193, 7;
   --bs-danger-rgb: 212, 150, 134;
   --bs-light-rgb: 248, 249, 250;
@@ -2398,7 +2407,7 @@ progress {
 }
 
 .border-info {
-  border-color: #37493f !important;
+  border-color: #a8c7b6 !important;
 }
 
 .border-warning {
@@ -6487,18 +6496,29 @@ progress {
   }
 }
 
-.custom-element {
-  color: #5b6f68;
+dl.about dt {
+  color: #33433d;
 }
 
-.custom-element-2 {
-  color: #33433d;
+ul.skills {
+  list-style: none;
+}
+
+ul.skills li {
+  padding: 0 0.5rem;
+  background-color: #bab2a3;
+}
+
+img.photo {
+  background-color: white;
+  padding: 1vw;
+  border: 1px dashed #cfc6b5;
 }
 
 .card-roll div.img-container {
   height: 220px;
   overflow: hidden;
-  background-color: gray;
+  background-color: #505050;
 }
 
 .card-roll div.img-container img {
@@ -6512,7 +6532,6 @@ progress {
 }
 
 .card-roll:hover img {
-  opacity: 1;
   -webkit-transition: all 5s ease-out;
   transition: all 5s ease-out;
   -webkit-transform: translateY(-50%);
@@ -6523,7 +6542,7 @@ progress {
   padding-bottom: 1.5rem;
 }
 
-#project {
+#project #profile {
   height: 80vh;
   overflow: auto;
 }

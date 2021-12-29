@@ -6500,12 +6500,11 @@ dl.about dt {
   color: #33433d;
 }
 
-ul.skills {
-  list-style: none;
+ul.skills li {
+  margin-left: 1rem;
 }
 
-ul.skills li {
-  padding: 0 0.5rem;
+ul.skills span {
   background-color: #bab2a3;
 }
 
